@@ -3,7 +3,8 @@
 
 # Content
 
-## Emacs
+
+## Emacs (`./emacs_config`)
 
 
 The main feature of this repository is the included Emacs configuration.
@@ -41,3 +42,21 @@ $ emacsclient -create-frame --alternate-editor=""
 - `multiple cursors` - look for "multiple cursors" into emacs_config.
 - `prettify-symbols` for a constant and highly customisable eye-candy experience
 - and more
+
+
+## Xmonad & Xmobar (`xmonad.hs` and `xmobarrc`)
+
+
+
+- `xmonad.hs` goes to `~/.xmonad/xmonad.hs`
+- `xmobarrc` -> `~/.xmobarrc`
+
+_System Requirement:_
+
+- [Monoid Font](https://github.com/larsenwork/monoid)
+- `xmobar`
+- `xmonad`/`xmonad-contrib`
+- `urxvt` as default terminal
+
+(urxvt is used as terminal but hey, you can change that in `xmonad.hs`, at the end of file)
+
