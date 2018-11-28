@@ -1,6 +1,5 @@
 ;; Custom emacs settings
 ;;
-;; 2018/11/26
 ;; tested with emacs 25.3.1, 26.1
 
 
@@ -21,7 +20,7 @@
 (mapc
  (lambda (package)
    (unless (package-installed-p package)
-     (progn (message "installing %s" package)
+     (progn (message "** installing %s **" package)
             (package-refresh-contents)
             (package-install package))))
  '(;; :package list:
@@ -30,6 +29,7 @@
    smart-mode-line smart-mode-line-powerline-theme
    ;;  major modes
    python-mode vue-mode yaml-mode rust-mode clojure-mode plantuml-mode
+   dockerfile-mode docker-tramp
    ;;  tools
    popwin direx magit multiple-cursors restclient urlenc
    ;;  python
