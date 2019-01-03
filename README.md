@@ -4,6 +4,10 @@
 # Content
 
 
+## Urxvt-Unicode (`./Xresources`)
+
+Goes to `~/.Xresources`. Essentially for _Urxvt_ configuration.
+
 ## Emacs (`./emacs_config`)
 
 
