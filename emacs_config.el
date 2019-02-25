@@ -37,7 +37,7 @@
    ;;  php
    ac-php
    ;;  misc
-   markdown-mode
+   markdown-mode pkgbuild-mode
    fireplace lorem-ipsum org-babel-eval-in-repl))
 
 
@@ -46,8 +46,8 @@
 
 
 ;; plantuml mode configuration
-(setq plantuml-jar-path "/usr/share/plantuml/lib/plantuml.jar")
-(setq org-plantuml-jar-path "/usr/share/plantuml/lib/plantuml.jar")
+(setq plantuml-jar-path "/opt/plantuml/plantuml.jar")
+(setq org-plantuml-jar-path "/opt/plantuml/plantuml.jar")
 
 ;; input method
 ;; (allows combination - `C-|` to enable/disable in any buffer),
