@@ -6,6 +6,8 @@ import XMonad.Hooks.FadeInactive
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.UrgencyHook
+import XMonad.Layout.Spacing
+
 
 
 main = xmonad =<< statusBar myBar myPP toggleStrutsKey myConfig
@@ -47,7 +49,8 @@ myConfig = defaultConfig
     { modMask = mod4Mask
     ,workspaces = myWorkspaces
     ,terminal = "urxvt +sb -tr -geometry 80x24."
-    ,layoutHook = avoidStruts $ layoutHook azertyConfig
+    ,layoutHook = spacingRaw True (Border 0 1 10 1) True (Border 5 5 5 5) True $
+                avoidStruts $ layoutHook azertyConfig
     ,manageHook = manageDocks <+> manageHook azertyConfig
 
     }
