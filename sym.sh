@@ -14,8 +14,8 @@ rm ~/.tmux.conf
 
 
 ln -s $(pwd)/emacs_config.el ~/.emacs 
-ln -s $(pwd)./xmobarrc ~/.xmobarrc 
-ln -s $(pwd)./xmonad.hs ~/.xmonad/xmonad.hs
-ln -s $(pwd)./tmux.conf ~/.tmux.conf
+ln -s $(pwd)/xmobarrc ~/.xmobarrc 
+ln -s $(pwd)/xmonad.hs ~/.xmonad/xmonad.hs
+ln -s $(pwd)/tmux.conf ~/.tmux.conf
 
 
